@@ -3,6 +3,7 @@ The exact same app developed in React Native and in Flutter. Allows an apples-to
 
 ## Requirements
 | Need | Why we need it | Where to get it |
+| ---- | ----- | ----- |
 | node and npm | We run a RESTful API to serve data | [nodejs.org](http://nodejs.org/download) | 
 | mongoDB | for the movie database | [mongoDB.com](https://www.mongodb.com/download-center#community) | 
 | flutter tools | To run Flutter projects | [flutter.io](https://flutter.dev/docs/get-started/install) |
