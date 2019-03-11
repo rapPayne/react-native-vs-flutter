@@ -1,6 +1,13 @@
 # react-native-vs-flutter
 The exact same app developed in React Native and in Flutter. Allows an apples-to-apples comparison
 
+## Requirements
+| Need | Why we need it | Where to get it |
+| node and npm | We run a RESTful API to serve data | [nodejs.org](http://nodejs.org/download) | 
+| mongoDB | for the movie database | [mongoDB.com](https://www.mongodb.com/download-center#community) | 
+| flutter tools | To run Flutter projects | [flutter.io](https://flutter.dev/docs/get-started/install) |
+| expo client | To run React Native projects | npm install --global expo@latest |
+
 ## To run the Flutter project
 1. Setup the database
 2. Run the node/Express web server
@@ -15,7 +22,8 @@ The exact same app developed in React Native and in Flutter. Allows an apples-to
 1. Make sure a mongod server is running
 2. Open a bash/Powershell/terminal window
 3. cd to the "server" folder
-4. npm run setup
+4. npm install (You only need to do this once)
+5. npm run setup
 This will create a new mongoDB database called 'daam' and load it up
 with realistic-looking data. You only need to do this one time, but feel free to do it as many times as you like to refresh the database.
 
