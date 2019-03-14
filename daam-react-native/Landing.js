@@ -7,8 +7,6 @@ import { FilmDetails } from './FilmDetails';
 import { ShowingTimes } from './ShowingTimes';
 import { Title } from './Title';
 
-//import showings from './showings.json'
-
 const styles = StyleSheet.create({
   header: { flex: 1, flexDirection: 'row' },
   logo: {

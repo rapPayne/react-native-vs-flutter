@@ -43,11 +43,13 @@ const styles = StyleSheet.create({
 })
 
 export function FilmDetails(props) {
+  const rootUrl = "http://localhost:5000";
+
   return (
     <SafeAreaView>
         <View style={styles.container}>
           <View style={styles.posterContainer}>
-            <Image source={{ uri: `http://localhost:5000/${props.film.poster_path}` }} style={styles.poster} />
+            <Image source={{ uri: `${rootUrl}/${props.film.poster_path}` }} style={styles.poster} />
           </View>
           {props.showings && props.selected_date &&
             <ShowingTimes selected_date={props.selected_date} showings={props.showings} chooseTime={props.chooseTime} film={props.film} />}

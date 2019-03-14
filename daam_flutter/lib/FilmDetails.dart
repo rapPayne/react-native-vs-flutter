@@ -18,7 +18,7 @@ class FilmDetails extends StatelessWidget {
             padding: EdgeInsets.all(20),
             child: Column(children: <Widget>[
               Center(
-                child: Image.network('$rootUrl${this.film['poster_path']}',
+                child: Image.network('$rootUrl${film['poster_path']}',
                     height: 400, width: 400, fit: BoxFit.contain),
               ),
               selectedDate == null || film == null
@@ -56,25 +56,3 @@ class FilmDetails extends StatelessWidget {
             ])));
   }
 }
-
-/*
-x    <SafeAreaView>
-        <View style={styles.container}>
-          <View style={styles.posterContainer}>
-x            <Image source={{ uri: `http://localhost:5000/${props.film.poster_path}` }} style={styles.poster} />
-          </View>
-x          {props.showings && props.selected_date &&
-x            <ShowingTimes selected_date={props.selected_date} showings={props.showings} chooseTime={props.chooseTime} film={props.film} />}
-x          <Title>{props.film.title}</Title>
-          <Text style={styles.tagline}>{props.film.tagline}</Text>
-          <Text style={styles.homepage}>{props.film.homepage}</Text>
-          <Text style={styles.overview}>{props.film.overview}</Text>
-          <Text style={styles.release_date}>Release date: {formatReleaseDate(props.film.release_date)}</Text>
-          <Text style={styles.runtime}>Running time: {props.film.runtime} minutes</Text>
-          <View style={styles.ratingsRow}>
-            <Text style={styles.bigRating}>Rating: {props.film.vote_average}/<Text style={styles.smallRating}>10</Text></Text>
-            <Text>{props.film.vote_count} votes</Text>
-          </View>
-        </View>
-x    </SafeAreaView>
-*/

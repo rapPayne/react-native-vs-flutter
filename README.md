@@ -2,22 +2,22 @@
 The exact same app developed in React Native and in Flutter. Allows an apples-to-apples comparison
 
 ## Requirements
-| Need | Why we need it | Where to get it |
-| ---- | ----- | ----- |
-| node and npm | We run a RESTful API to serve data | [nodejs.org](http://nodejs.org/download) | 
-| mongoDB | for the movie database | [mongoDB.com](https://www.mongodb.com/download-center#community) | 
-| flutter tools | To run Flutter projects | [flutter.io](https://flutter.dev/docs/get-started/install) |
-| expo client | To run React Native projects | npm install --global expo@latest |
+| Need          | Why we need it                     | Where to get it |
+| ------------- | ---------------------------------- | ------------------------------------- |
+| node and npm  | We run a RESTful API to serve data | [nodejs.org](http://nodejs.org/download) | 
+| mongoDB       | For the movie database             | [mongoDB.com](https://www.mongodb.com/download-center#community) | 
+| flutter tools | To run Flutter projects            | [flutter.io](https://flutter.dev/docs/get-started/install) |
+| expo client   | To run React Native projects       | npm install --global expo@latest |
 
 ## To run the Flutter project
-1. Setup the database
-2. Run the node/Express web server
-3. Run the Flutter project
+1. [Setup the database](#to-set-up-the-database)
+2. [Run the node/Express web server](#to-run-the-node/express-web-server)
+3. [Run the Flutter project](#to-run-the-flutter-project)
 
 ## To run the React Native project
-1. Setup the database (if you haven't already)
-2. Run the node/Express web server
-3. Run the React Native project
+1. [Setup the database](#to-set-up-the-database) (if you haven't already)
+2. [Run the node/Express web server](#to-run-the-node/express-web-server)
+3. [Run the React Native project](#to-run-the-react-native-project)
 
 ## To set up the database
 1. Make sure a mongod server is running
