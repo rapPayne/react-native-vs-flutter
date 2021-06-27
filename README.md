@@ -9,6 +9,8 @@ The exact same app developed in React Native and in Flutter. Allows an apples-to
 
 ## Comparison Metrics
 
+### Lines of Code
+
 ![Screen Shot 2021-06-26 at 17 26 48](https://user-images.githubusercontent.com/1935696/123540221-46c21200-d73e-11eb-8558-e0b0378de5ea.png)
 
 ## Requirements
