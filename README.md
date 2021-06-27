@@ -1,7 +1,7 @@
 # react-native-vs-flutter
 The exact same app developed in React Native and in Flutter. Allows an apples-to-apples comparison
 
-## Blog Post
+## Accompanying Blog Posts
 
 - [React Native or Flutter: Which should I choose? (Part 1)](https://archive.ph/rm5Hn)
 - [React Native or Flutter: Which should I choose? (Part 2)](https://archive.ph/gDKv5)
