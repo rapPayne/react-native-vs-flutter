@@ -23,12 +23,12 @@ The exact same app developed in React Native and in Flutter. Allows an apples-to
 
 ## To run the Flutter project
 1. [Setup the database](#to-set-up-the-database)
-2. [Run the node/Express web server](#to-run-the-node/express-web-server)
+2. [Run the node/Express web server](#to-run-the-nodeexpress-web-server)
 3. [Run the Flutter project](#to-run-the-flutter-project)
 
 ## To run the React Native project
 1. [Setup the database](#to-set-up-the-database) (if you haven't already)
-2. [Run the node/Express web server](#to-run-the-node/express-web-server)
+2. [Run the node/Express web server](#to-run-the-nodeexpress-web-server)
 3. [Run the React Native project](#to-run-the-react-native-project)
 
 ## To set up the database

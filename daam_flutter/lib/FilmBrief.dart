@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:redux/redux.dart';
-import 'store/Actions.dart';
+import 'store/Actions.dart' as daam_Actions;
 import 'store/AppState.dart';
 
 class FilmBrief extends StatelessWidget {
@@ -13,10 +13,11 @@ class FilmBrief extends StatelessWidget {
     String rootUrl = "http://localhost:5000";
     return new GestureDetector(
         onTap: () {
-          this
-              .store
-              .dispatch({'type': Actions.SET_SELECTED_FILM, "film": this.film});
-          this.store.dispatch({'type': Actions.SHOW_FILM_DETAILS});
+          this.store.dispatch({
+            'type': daam_Actions.Actions.SET_SELECTED_FILM,
+            "film": this.film
+          });
+          this.store.dispatch({'type': daam_Actions.Actions.SHOW_FILM_DETAILS});
         },
         child: Padding(
             padding: const EdgeInsets.only(top: 20),

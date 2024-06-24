@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
-import 'store/Actions.dart'; 
+import 'store/Actions.dart' as daam_Actions;
 import 'store/AppState.dart';
 import 'FilmBrief.dart';
 import 'FilmDetails.dart';
@@ -12,7 +12,7 @@ import 'Title.dart' as DaamTitle;
 class Landing extends StatefulWidget {
   final Store<AppState> store;
   Landing({this.store}) {
-    this.store.dispatch({'type': Actions.FETCH_FILMS});
+    this.store.dispatch({'type': daam_Actions.Actions.FETCH_FILMS});
   }
 
   @override
@@ -74,14 +74,16 @@ class _Landing extends State<Landing> {
   }
 
   Widget showFilmDetails(film) {
-    return SingleChildScrollView(child: Column(
-      children: <Widget>[
-      FilmDetails(film: this.store.state.selectedFilm, selectedDate: this.store.state.selectedDate, showings: this.store.state.showings),
-      RaisedButton(
-        child:Text("Done"), 
-        onPressed: () => store.dispatch({'type': Actions.HIDE_FILM_DETAILS })
-        ),
-      ]
-      ));
+    return SingleChildScrollView(
+        child: Column(children: <Widget>[
+      FilmDetails(
+          film: this.store.state.selectedFilm,
+          selectedDate: this.store.state.selectedDate,
+          showings: this.store.state.showings),
+      ElevatedButton(
+          child: Text("Done"),
+          onPressed: () =>
+              store.dispatch({'type': daam_Actions.Actions.HIDE_FILM_DETAILS})),
+    ]));
   }
 }
